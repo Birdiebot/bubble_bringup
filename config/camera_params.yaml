@@ -1,0 +1,13 @@
+# Due known ROS upstream problems, set this paramters file
+# For details, see README.md
+
+# use camera as video resource
+# type: 1
+# use video as video resource
+type: 2
+resource: '/home/nvidia/Desktop/radia1.mp4'
+inputAngle : 30.0
+inputScale: 0.20
+exposureTime : 6000
+gainAuto : 2
+use_image_qos: false

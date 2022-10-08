@@ -1,0 +1,51 @@
+camera:
+  ros__parameters:
+    # use camera as video resource
+    # type: 1
+    # use video as video resource
+    type: 1
+    resource: '/home/nvidia/Downloads/red_exposure.mp4'
+    inputAngle : 30.0
+    inputScale: 0.20
+    use_image_qos: true
+
+Visual:
+  ros__parameters:
+    contourAreaThreshold: 0.0
+    morphologyexIter: 20
+    debug_mode: true
+    grayThres: 159
+    hueMax: 32
+    hueMin: 0
+    lightStripAngleDiff: 5.0
+    lightStripSizeDiffRatio: 2.0
+
+    lightStripDisplacementDiffMax: 10.0
+    lightStripDisplacementDiffMin: 1.0
+    lowerArmourStrip: 0
+    lowerCircleStrip: 0
+    lowerHammerStrip: 10
+    saturationMax: 25
+    saturationMin: 0
+    upperArmourStrip: 1000
+    upperCircleStrip: 1000
+    upperHammerStrip: 1000
+    use_sim_time: false
+    valueMax: 255
+    valueMin: 152
+
+aiming_node:
+  ros__parameters:
+    magnification : 5
+    moving_alter_thres : 5
+    gyro_thres : 5
+    tolerance_thres : 15
+    yaw_offset: -0.022
+    pitch_offset: -0.020
+    armour_alter_thres : 8
+    height_differ_min_thres : 0
+    height_differ_max_thres : 50
+    width_differ_min_thres : 10
+    width_alter_min_thres : 100
+    width_differ_max_thres : 600
+    gyro_iou_thres : 0.5 
